@@ -11,13 +11,13 @@ import SortBy from '../components/LiveMap/SortBy/SortBy';
 
 
 export default function Women() {
+    const { women } = data;
     const [type, setType] = useState([]);
     const [subType, setSubType] = useState([]);
     const [size, setSize] = useState([]);
     const [color, setColor] = useState([]);
     const [price, setPrice] = useState(6000);
     const [filteredPrice, setFilteredPrice] = useState(6000);
-    //dropdown states
     const [badge, setBadge] = useState('');
     const [sortBy, setSortBy] = useState("Default")
 
