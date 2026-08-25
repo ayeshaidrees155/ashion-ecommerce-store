@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../WomenProduct/WomenProduct.css";
-import * as data from "../../../data/Product.json";
-
+import data from "../../../data/Product.json";
 import { useNavigate } from "react-router-dom";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";

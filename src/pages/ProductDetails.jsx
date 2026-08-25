@@ -4,7 +4,7 @@ import { useLocation, Link, useParams } from "react-router-dom";
 import Counter from '../components/Counter/Counter';
 import { FaWeight } from 'react-icons/fa';
 import { IoMdHeartEmpty } from "react-icons/io";
-import * as data from "../data/Product.json"
+import data from "../data/Product.json";
 
 import Button from '../components/Button/Button';
 import Wrapper from './Wrapper';

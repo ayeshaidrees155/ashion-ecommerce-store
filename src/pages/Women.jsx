@@ -5,9 +5,9 @@ import "./pages.css";
 import Categories from "../components/Categories/Categories"
 import WomenProduct from '../components/Products/WomenProduct/WomenProduct';
 import Path from '../components/Path/Path';
-import * as data from "../data/Product.json"
+import data from "../data/Product.json";
 import SortBy from '../components/LiveMap/SortBy/SortBy';
-import { use } from 'react';
+
 
 
 export default function Women() {

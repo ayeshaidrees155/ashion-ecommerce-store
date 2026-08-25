@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as data from "../../../data/Product.json";
+import data from "../../../data/Product.json";
 import "../WomenProduct/WomenProduct.css";
 import { Link } from "react-router-dom";
 import { IoEyeSharp } from "react-icons/io5";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import "./ProductSlider.css"; // We'll move the slider specific CSS here
+import "./ProductSlider.css";
 
 export default function ProductSlider({ sliderImgs, productName }) {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
