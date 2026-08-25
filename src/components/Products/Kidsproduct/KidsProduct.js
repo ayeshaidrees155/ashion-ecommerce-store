@@ -54,7 +54,6 @@ export default function Kids() {
       return;
     }
   };
-  const { kids } = data;
   return (
     <div className="WProductSec">
       {kids?.map((item) => (

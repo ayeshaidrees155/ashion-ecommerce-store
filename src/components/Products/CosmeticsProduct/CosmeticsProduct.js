@@ -7,8 +7,6 @@ import Loader from "../../Loader/Loader";
 import { Link } from "react-router-dom";
 
 export default function CosmeticsProduct() {
-  const { cosmetics } = data;
-
   const goToCartPage = (item) => {
     const prevCart = JSON.parse(localStorage.getItem("My Cart")) || [];
     const existingIndex = prevCart.findIndex(

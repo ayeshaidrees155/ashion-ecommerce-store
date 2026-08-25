@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import Loader from "../../Loader/Loader";
 
 export default function WomenProduct({ filterItems }) {
-  const { women } = data;
   const [imgLoading, setImgLoading] = useState({});
 
   const handleLoad = (id) => {
@@ -40,7 +39,6 @@ export default function WomenProduct({ filterItems }) {
   const goToWishlistPage = (item) => {
     const prevWishlist = JSON.parse(localStorage.getItem("My Wishlist")) || [];
 
-    //to check if present laready
     const isAlreadyExist = prevWishlist.some(
       (wishItem) => wishItem.id === item.id,
     );

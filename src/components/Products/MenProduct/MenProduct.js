@@ -7,8 +7,6 @@ import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import Loader from "../../Loader/Loader";
 
 export default function MenProduct({ filterItems }) {
-  const { men } = data;
-
   const [imgLoading, setImgLoading] = useState({});
   const handleLoad = (id) => {
     setImgLoading((prev) => ({ ...prev, [id]: true }));
