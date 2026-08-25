@@ -1,0 +1,45 @@
+.instaSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.instaImg {
+    flex: 1 1 130px;
+    position: relative;
+
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.instaImg img {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 208, 208, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+}
+
+.instaImg:hover .overlay {
+    top: 0;
+}

@@ -1,0 +1,116 @@
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 23px;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000;
+}
+
+.input-box input {
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+.btns {
+    width: 100%;
+    padding: 12px;
+    background-color: #e6e6e6;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.social-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+.link {
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    cursor: "pointer"
+}
+
+.-text {
+    color: #ca1515;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.apple-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.apple-icon {
+    color: #fff;
+    font-size: 20px;
+}

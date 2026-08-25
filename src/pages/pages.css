@@ -1,0 +1,181 @@
+.mainContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    padding: 30px 10px;
+}
+
+@media (max-width:800px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+}
+
+.leftContainer {
+    height: auto;
+    flex: 1 1 30% !important;
+}
+
+.rightContainer {
+    height: auto;
+    flex: 1 1 70% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+
+.imgSec {
+    flex: 1 1 30%;
+    height: 500px;
+    padding: 20px;
+
+}
+
+.imgSec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detailsSec {
+    flex: 1 1 50%;
+    height: 500px;
+    padding: 30px 10px;
+    margin: 20px;
+}
+
+.detailName {
+    font-size: var(--fs-primary);
+}
+
+.detailPrice {
+    color: red;
+    font-size: var(--fs-primary);
+    font-weight: bold;
+}
+
+.detailDescription {
+    color: var(--fc-secondary);
+    font-weight: lighter;
+}
+
+.selSection {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0px 15px;
+    margin: 20px 0;
+}
+
+.wishlistIconDiv {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.wishlistIcon {
+    font-size: 22px;
+    color: #333333;
+}
+
+.wishlistIconDiv:hover {
+    border-color: red;
+    color: red;
+}
+
+.contactInfo {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locationDiv {
+    flex: 1 1 45%;
+
+    padding: 3px 30px;
+}
+
+.mapDiv {
+    flex: 1 1 45%;
+
+    padding: 30px;
+}
+
+.circleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2px 57px;
+    ;
+
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background: yellow;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.wishlistIconDiv {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e6e3e3;
+    border-radius: 30px;
+    text-align: center;
+
+    color: grey;
+}
+
+.wishlistIcon {
+    margin: 16px 11px;
+    font-size: 19px;
+}
+
+.red {
+    color: red;
+}
+
+
+.pathAdjustment {
+    padding-top: 100px;
+}
+
+
+@media (max-width:750px) {
+    .detailsContainer {
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+
+    }
+
+    .locationDiv {
+        width: 100%;
+    }
+
+    .mapDiv {
+        width: 100%;
+    }
+}

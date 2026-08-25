@@ -1,0 +1,31 @@
+:root {
+    --ff-fancy: "Pacifico", cursive;
+    --fw-fancy: 400;
+    --fs-fancy: 35px;
+
+    /* bg */
+    --bg-primary: white;
+    --bg-secondary: #737171;
+    --bg-tertiary: red;
+    /*nav icon */
+    --is-size: 20px;
+    --iw-weight: bolder;
+    --ic-primary: black;
+
+    /* icon footer */
+    --is-primary: 36px;
+
+
+
+
+    /* heading */
+    --fw-primary: 600;
+    --fw-secondary: lighter;
+    --fc-primary: black;
+    --fc-secondary: #737171;
+    --fc-tertiary: white;
+
+    /* titles */
+    --fs-secondary: 15px;
+    --fs-primary: 1.5rem;
+}

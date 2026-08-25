@@ -1,0 +1,46 @@
+li {
+    list-style: none;
+    color: var(--fc-secondary);
+    cursor: pointer;
+}
+
+.sideBar {
+    padding-left: 5%;
+    width: 100%;
+}
+
+.catTitle {
+    font-size: var(--fs-primary);
+    border-bottom: 3px solid red;
+    width: fit-content;
+
+}
+
+#range {
+    color: red;
+    margin: 12px 37px;
+    width: 80%;
+
+
+}
+
+.priceFilter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.filterBtn {
+    border: 2px solid red;
+    background: transparent;
+    font-size: bolder;
+    font-weight: bold;
+}
+
+span {
+    display: flex;
+
+}

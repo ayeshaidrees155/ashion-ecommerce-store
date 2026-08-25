@@ -1,0 +1,63 @@
+.AddressTitle {
+    font-size: var(--fs-primary);
+    width: fit-content;
+    margin: 10px 0px 30px 0px;
+}
+
+.info {
+    color: var(--fc-secondary);
+    font-weight: lighter;
+    margin: 5px 10px 20px 10px;
+    width: fit-content;
+
+}
+
+.subTitle {
+    font-size: var(--fs-secondary);
+    font-weight: bold;
+}
+
+.addressSec {
+    /* padding-top: 80px !important; */
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.formSec {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    padding: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid #cec1c1;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+    margin: 5px;
+}
+
+textarea {
+    border: 1px solid #cec1c1;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+    margin: 5px;
+}
+
+label {
+    font-size: var(--fs-secondary);
+    margin: 5px 10px;
+}

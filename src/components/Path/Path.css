@@ -1,0 +1,37 @@
+.path-bar {
+    padding: 12px 0;
+}
+
+.pathSec {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.path-links {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #000;
+}
+
+
+.slash {
+    margin: 0 10px;
+    color: black;
+}
+
+.current-page {
+    color: #666;
+    text-transform: capitalize;
+
+}

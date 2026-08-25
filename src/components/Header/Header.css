@@ -1,0 +1,101 @@
+.navbar {
+    position: fixed;
+    z-index: 11111;
+    box-shadow: 9px 5px 10px 4px rgba(221, 218, 218, 0.5);
+    width: 100%;
+    padding: 12px 0px;
+}
+
+.navbar-brand {
+    font-family: var(--ff-fancy);
+    font-weight: var(--fw-fancy);
+    font-size: var(--fs-fancy);
+}
+
+.bg-body-tertiary {
+    background: var(--bg-primary) !important;
+}
+
+
+
+
+.navItems {
+    margin: 0px 90px 0px 70px;
+}
+
+.navItem {
+    color: var(--fc-primary);
+
+    margin: 0px 10px 0px 10px;
+
+}
+
+.navItem:hover {
+    text-decoration: underline;
+    color: red;
+
+}
+
+.navIcon {
+    color: var(--ic-primary);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.navIcon:hover {
+    transform: scale(1.1);
+
+
+}
+
+.me-3 {
+    margin-top: 6px;
+}
+
+.loginLink {
+    color: var(--fc-secondary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.navbar-nav {
+    width: 92%;
+    justify-content: center;
+}
+
+.linkSec {
+    margin: 5px 10px;
+}
+
+.mobLink {
+    display: flex;
+    font-size: small;
+    margin: 0 !important;
+
+}
+
+.margin {
+    margin: 0px;
+    padding: 2px;
+}
+
+
+.cartBadge {
+    position: absolute;
+    top: -1px;
+    right: 10px;
+    background-color: #030303;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}

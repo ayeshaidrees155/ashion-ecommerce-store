@@ -1,0 +1,20 @@
+.qtySelector {
+    display: flex;
+    border: 1px solid #c6c2c2;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 7px 16px;
+    margin: 10px -15px;
+    border-radius: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qtyVal {
+    border: none;
+    background: transparent;
+}
+
+.qty {
+    margin: 8px 13px;
+}

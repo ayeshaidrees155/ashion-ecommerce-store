@@ -1,0 +1,647 @@
+{
+    "women": [
+        {
+            "id": 101,
+            "name": "Stylish Coat",
+            "icon": "⭐⭐⭐",
+            "img": "women1-1.jpg",
+            "sliderImgs": [
+                "women1-1.jpg",
+                "women1-2.jpg",
+                "women1-3.jpg",
+                "women1-4.jpg"
+            ],
+            "sizes": "S",
+            "price": 3000,
+            "color": "green",
+            "category": "women",
+            "type": "clothing",
+            "subType": "coat",
+            "badge": "New",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 102,
+            "name": "DropDown Frok",
+            "icon": "⭐⭐⭐",
+            "img": "women2-1.jpg",
+            "sliderImgs": [
+                "women2-1.jpg",
+                "women2-2.jpg",
+                "women2-3.jpg",
+                "women2-4.jpg"
+            ],
+            "sizes": "M",
+            "price": 4000,
+            "color": "red",
+            "category": "women",
+            "type": "clothing",
+            "subType": "dresses",
+            "badge": "Best Selling",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 103,
+            "name": "Cozy Shirt",
+            "icon": "⭐⭐⭐",
+            "img": "women3-1.jpg",
+            "sliderImgs": [
+                "women3-1.jpg",
+                "women3-2.jpg",
+                "women3-3.jpg",
+                "women3-4.jpg"
+            ],
+            "sizes": "XS",
+            "price": 2500,
+            "color": "black",
+            "category": "women",
+            "subType": "shirts",
+            "type": "clothing",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 104,
+            "name": "Fairytale",
+            "icon": "⭐⭐⭐",
+            "img": "women4-1.jpg",
+            "sliderImgs": [
+                "women4-1.jpg",
+                "women4-2.jpg",
+                "women4-3.jpg",
+                "women4-4.jpg"
+            ],
+            "sizes": "XXS",
+            "price": 4500,
+            "subType": "dresses",
+            "color": "white",
+            "type": "clothing",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 105,
+            "name": "Wides",
+            "icon": "⭐⭐⭐",
+            "img": "women5-1.jpg",
+            "sliderImgs": [
+                "women5-1.jpg",
+                "women5-2.jpg",
+                "women5-3.jpg",
+                "women5-4.jpg"
+            ],
+            "price": 1800,
+            "sizes": "S",
+            "color": "blue",
+            "subType": "jeans",
+            "type": "clothing",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 106,
+            "name": "Kaftan",
+            "icon": "⭐⭐⭐ ",
+            "img": "women6-1.jpg",
+            "sliderImgs": [
+                "women6-1.jpg",
+                "women6-2.jpg",
+                "women6-3.jpg",
+                "women6-4.jpg"
+            ],
+            "price": 4000,
+            "sizes": "L",
+            "color": "grey",
+            "subType": "dresses",
+            "type": "clothing",
+            "badge": "New",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 107,
+            "name": "Heels",
+            "icon": "⭐⭐⭐",
+            "img": "women7-1.jpg",
+            "sliderImgs": [
+                "women7-1.jpg",
+                "women7-2.jpg",
+                "women7-3.jpg",
+                "women7-4.jpg"
+            ],
+            "price": 3000,
+            "sizes": "L",
+            "color": "red",
+            "type": "shoes",
+            "subType": "heels",
+            "badge": "Sale",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 108,
+            "name": "Sandals",
+            "icon": "⭐⭐⭐",
+            "img": "women8-1.jpg",
+            "sliderImgs": [
+                "women8-1.jpg",
+                "women8-2.jpg",
+                "women8-3.jpg",
+                "women8-4.jpg"
+            ],
+            "price": 1200,
+            "sizes": "S",
+            "color": "black",
+            "type": "shoes",
+            "subType": "sandals",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 109,
+            "name": "Skirt",
+            "icon": "⭐⭐⭐",
+            "img": "women9-1.jpg",
+            "sliderImgs": [
+                "women9-1.jpg",
+                "women9-2.jpg",
+                "women9-3.jpg",
+                "women9-4.jpg"
+            ],
+            "price": 2500,
+            "sizes": "M",
+            "color": "black",
+            "type": "clothing",
+            "subType": "jackets",
+            "badge": "Out of Stock",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ],
+    "men": [
+        {
+            "id": 201,
+            "name": "Watch",
+            "icon": "⭐⭐⭐",
+            "img": "men1-1.jpg",
+            "sliderImgs": [
+                "men1-1.jpg",
+                "men1-2.jpg",
+                "men1-3.jpg",
+                "men1-4.jpg"
+            ],
+            "price": 5000,
+            "sizes": "S",
+            "type": "accessories",
+            "subType": "watch",
+            "badge": "New",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "men"
+        },
+        {
+            "id": 202,
+            "name": "Shoes",
+            "icon": "⭐⭐⭐",
+            "img": "men2-1.jpg",
+            "sliderImgs": [
+                "men2-1.jpg",
+                "men2-2.jpg",
+                "men2-3.jpg",
+                "men2-4.jpg"
+            ],
+            "sizes": "M",
+            "type": "shoes",
+            "subType": "sneakers",
+            "price": 3500,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "men"
+        },
+        {
+            "id": 203,
+            "name": "Jeans",
+            "icon": "⭐⭐⭐",
+            "img": "men3-1.jpg",
+            "sliderImgs": [
+                "men3-1.jpg",
+                "men3-2.jpg",
+                "men3-3.jpg",
+                "men3-4.jpg"
+            ],
+            "sizes": "L",
+            "type": "clothing",
+            "subType": "jeans",
+            "price": 2500,
+            "badge": "Sale",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "men"
+        },
+        {
+            "id": 204,
+            "name": "Belt",
+            "icon": "⭐⭐⭐",
+            "img": "men4-1.jpg",
+            "sliderImgs": [
+                "men4-1.jpg",
+                "men4-2.jpg",
+                "men4-3.jpg",
+                "men4-4.jpg"
+            ],
+            "sizes": "S",
+            "type": "accessories",
+            "subType": "belt",
+            "price": 1500,
+            "color": "black",
+            "badge": "Best Selling",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 205,
+            "name": "Shirt",
+            "icon": "⭐⭐⭐",
+            "img": "men5-1.jpg",
+            "sliderImgs": [
+                "men5-1.jpg",
+                "men5-2.jpg",
+                "men5-3.jpg",
+                "men5-4.jpg"
+            ],
+            "color": "white",
+            "price": 4000,
+            "sizes": "XXS",
+            "type": "clothing",
+            "subType": "shirts",
+            "badge": "New",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 206,
+            "name": "Blue Coat",
+            "icon": "⭐⭐⭐",
+            "img": "men6-1.jpg",
+            "sliderImgs": [
+                "men6-1.jpg",
+                "men6-2.jpg",
+                "men6-3.jpg",
+                "men6-4.jpg"
+            ],
+            "sizes": "L",
+            "type": "clothing",
+            "subType": "coat",
+            "color": "blue",
+            "price": 5000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 207,
+            "name": "Men Glasses",
+            "icon": "⭐⭐⭐",
+            "img": "men7-1.jpg",
+            "sliderImgs": [
+                "men7-1.jpg",
+                "men7-2.jpg",
+                "men7-3.jpg",
+                "men7-4.jpg"
+            ],
+            "color": "blue",
+            "price": 2000,
+            "sizes": "M-L",
+            "type": "accessories",
+            "subType": "glasses",
+            "badge": "Out of Stock",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 208,
+            "name": "Snow Hoodie",
+            "icon": "⭐⭐⭐",
+            "img": "men8-1.jpg",
+            "sliderImgs": [
+                "men8-1.jpg",
+                "men8-2.jpg",
+                "men8-3.jpg",
+                "men8-4.jpg"
+            ],
+            "price": 1000,
+            "color": "white",
+            "sizes": "M",
+            "type": "clothing",
+            "subType": "shirts",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 209,
+            "name": "Black Tees",
+            "icon": "⭐⭐⭐",
+            "img": "men9-1.jpg",
+            "sliderImgs": [
+                "men9-1.jpg",
+                "men9-2.jpg",
+                "men9-3.jpg",
+                "men9-4.jpg"
+            ],
+            "color": "black",
+            "price": 5000,
+            "sizes": "L",
+            "type": "clothing",
+            "subType": "tshirts",
+            "badge": "Best Selling",
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ],
+    "blog": [
+        {
+            "id": 601,
+            "img": "blog1.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 602,
+            "img": "blog2.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 603,
+            "img": "blog3.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 604,
+            "img": "blog4.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 605,
+            "img": "blog5.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 606,
+            "img": "blog6.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 607,
+            "img": "blog7.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 608,
+            "img": "blog8.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 609,
+            "img": "blog9.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        },
+        {
+            "id": 610,
+            "img": "blog10.jpg",
+            "description": "Gog hadid,Rita Ora, Serene and Othe rHot Celeb stuns at 2030.....",
+            "author": "Ema Temhae",
+            "date": "Sep 17, 2030"
+        }
+    ],
+    "kids": [
+        {
+            "id": 301,
+            "name": "Goolges",
+            "icon": "⭐⭐⭐",
+            "img": "kid1.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 302,
+            "name": "Socks",
+            "icon": "⭐⭐⭐",
+            "img": "kid2.jpg",
+            "price": 1000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "kids"
+        },
+        {
+            "id": 303,
+            "name": "Sneakers",
+            "icon": "⭐⭐⭐",
+            "img": "kid3.jpg",
+            "price": 4500,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 304,
+            "name": "kidoo Band",
+            "icon": "⭐⭐⭐",
+            "img": "kid4.jpg",
+            "price": 1000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "kids"
+        },
+        {
+            "id": 305,
+            "name": "Mini Shoe",
+            "icon": "⭐⭐⭐",
+            "img": "kid5.jpg",
+            "price": 3000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 306,
+            "name": "Lining Skirt",
+            "icon": "⭐⭐⭐",
+            "img": "kid6.jpg",
+            "price": 2200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "kids"
+        },
+        {
+            "id": 307,
+            "name": "White Tees",
+            "icon": "⭐⭐⭐",
+            "img": "kid7.jpg",
+            "price": 2200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 308,
+            "name": "Button Down",
+            "icon": "⭐⭐⭐",
+            "img": "kid8.jpg",
+            "price": 1000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 309,
+            "name": "Pink Skirt",
+            "icon": "⭐⭐⭐",
+            "img": "kid9.jpg",
+            "price": 2200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ],
+    "accessories": [
+        {
+            "id": 401,
+            "name": "Jhumki",
+            "icon": "⭐⭐⭐",
+            "img": "acc1.jpg",
+            "price": 500,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "accessories"
+        },
+        {
+            "id": 402,
+            "name": "Ring",
+            "icon": "⭐⭐⭐",
+            "img": "acc2.jpg",
+            "price": 1500,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "accessories"
+        },
+        {
+            "id": 403,
+            "name": "Velvety",
+            "icon": "⭐⭐⭐",
+            "img": "acc3.jpg",
+            "price": 5200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "accessories"
+        },
+        {
+            "id": 404,
+            "name": "Pendent",
+            "icon": "⭐⭐⭐",
+            "img": "acc4.jpg",
+            "price": 3400,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 405,
+            "name": "Diamond",
+            "icon": "⭐⭐⭐",
+            "img": "acc5.jpg",
+            "price": 5000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 406,
+            "name": "Bracelet",
+            "icon": "⭐⭐⭐",
+            "img": "acc6.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 407,
+            "name": "Claw",
+            "icon": "⭐⭐⭐",
+            "img": "acc7.jpg",
+            "price": 600,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 408,
+            "name": "Hairpin",
+            "icon": "⭐⭐⭐",
+            "img": "acc8.jpg",
+            "price": 500,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 409,
+            "name": "Glasses",
+            "icon": "⭐⭐⭐",
+            "img": "acc9.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ],
+    "cosmetics": [
+        {
+            "id": 501,
+            "name": "Blush On",
+            "icon": "⭐⭐⭐",
+            "img": "cos1.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "cosmetics"
+        },
+        {
+            "id": 502,
+            "name": "Eye Pallette",
+            "icon": "⭐⭐⭐",
+            "img": "cos2.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "cosmetics"
+        },
+        {
+            "id": 503,
+            "name": "Face Powder",
+            "icon": "⭐⭐⭐",
+            "img": "cos3.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.",
+            "category": "cosmetics"
+        },
+        {
+            "id": 504,
+            "name": "Lens",
+            "icon": "⭐⭐⭐",
+            "img": "cos4.jpg",
+            "price": 3000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 505,
+            "name": "Concealer",
+            "icon": "⭐⭐⭐",
+            "img": "cos5.jpg",
+            "price": 1600,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 506,
+            "name": "Chanel",
+            "icon": "⭐⭐⭐",
+            "img": "cos6.jpg",
+            "price": 5200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 507,
+            "name": "Lip",
+            "icon": "⭐⭐⭐",
+            "img": "cos7.jpg",
+            "price": 1200,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 508,
+            "name": "Lipstick",
+            "icon": "⭐⭐⭐",
+            "img": "cos8.jpg",
+            "price": 2000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+            "id": 509,
+            "name": "Serum",
+            "icon": "⭐⭐⭐",
+            "img": "cos9.jpg",
+            "price": 1000,
+            "description": "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ]
+}
