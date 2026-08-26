@@ -11,7 +11,6 @@ import {
   FaYoutube,
   FaCcVisa,
   FaCcMastercard,
-  FaCcPaypal,
   FaGooglePay,
   FaApplePay,
 } from "react-icons/fa6";
