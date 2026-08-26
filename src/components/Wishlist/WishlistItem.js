@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import * as data from "../../data/Product.json";
 import { useState } from "react";
 import "./Wishlist.css";
 import Button from "../Button/Button";

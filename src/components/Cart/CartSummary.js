@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Button/Button";
 import "./Cart.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -137,8 +136,6 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
           className="place-order-btn"
           disabled={!isFormValid}
           style={{
-            backgroundColor: "red",
-
             backgroundColor: isFormValid ? "#ca1515" : "#cccccc",
             cursor: isFormValid ? "pointer" : "not-allowed",
           }}

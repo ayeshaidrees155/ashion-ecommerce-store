@@ -14,7 +14,6 @@ import Checkout from "./pages/Checkout.jsx";
 import Kids from "./pages/kids.jsx";
 import Cosmetics from "./pages/Cosmetics.jsx";
 import Accessories from "./pages/Accessories.jsx";
-import Path from "./components/Path/Path.js";
 import Wishlist from "./pages/Wishlist.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 
@@ -37,7 +36,7 @@ export default function App() {
         <Route path="/checkout/:total" element={<Checkout />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        //protected routes
+
         <Route
           path="/home"
           element={isAuthenticated ? <Home /> : <LoginPage />}

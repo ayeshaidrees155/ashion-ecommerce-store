@@ -1,6 +1,5 @@
 import React from "react";
 import "./Counter.css";
-import Title from "../Title/Title";
 
 export default function Counter({ title, quantity, setQuantity }) {
   const increment = () => {

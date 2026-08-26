@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../WomenProduct/WomenProduct.css";
-import data from "../../../data/Product.json";
+import productData from "../../../data/Product.json";
 import { useNavigate } from "react-router-dom";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
@@ -17,14 +17,14 @@ const CategoryBtn = ({ label, isActive, onClick }) => {
   );
 };
 export default function FilteredProduct() {
-  const { men, women, kids, accessories, cosmetics } = data;
-  const allProduct = [
-    ...(men || []),
-    ...(women || []),
-    ...(kids || []),
-    ...(accessories || []),
-    ...(cosmetics || []),
-  ];
+  const {
+    men = [],
+    women = [],
+    kids = [],
+    accessories = [],
+    cosmetics = [],
+  } = productData;
+  const allProduct = [...men, ...women, ...kids, ...accessories, ...cosmetics];
 
   const [selectedCat, setSelectedCat] = useState("All");
   const categories = [
@@ -120,7 +120,8 @@ export default function FilteredProduct() {
         {productToDisplay?.map((item, index) => (
           <div className="product" key={`${item.id}-${index}`}>
             <div className="productImg">
-              <img src={require(`../../../imgs/${item.img}`)} />
+              <img src={require(`../../../imgs/${item.img}`)} alt={item.name} />
+
               <div className="productOverlay">
                 <IoEyeSharp
                   className="overlayIcon"

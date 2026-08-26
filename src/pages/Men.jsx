@@ -5,13 +5,13 @@ import "./pages.css";
 import Categories from "../components/Categories/Categories"
 import MenProduct from '../components/Products/MenProduct/MenProduct';
 import Path from '../components/Path/Path';
-import data from "../data/Product.json"
+import productData from "../data/Product.json"
 import SortBy from '../components/LiveMap/SortBy/SortBy';
 
 
 
 export default function Men() {
-    const { men } = data;
+    const men = productData.men || [];
     const [type, setType] = useState([]);
     const [subType, setSubType] = useState([]);
     const [size, setSize] = useState([]);

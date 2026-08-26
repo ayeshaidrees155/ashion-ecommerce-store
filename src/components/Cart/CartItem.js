@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
-import * as data from "../../data/Product.json";
-import { DiVim } from "react-icons/di";
+// import productData from "../../data/Product.json";
 import Button from "../Button/Button";
 import "./Cart.css";
 import Counter from "../Counter/Counter";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function CartItem() {
-  const { men, women, kids, accessories, cosmetics } = data;
-  const allProduct = [
-    ...(men || []),
-    ...(women || []),
-    ...(kids || []),
-    ...(accessories || []),
-    ...(cosmetics || []),
-  ];
+  // const {
+  //   men = [],
+  //   women = [],
+  //   kids = [],
+  //   accessories = [],
+  //   cosmetics = [],
+  // } = productData;
+  // const allProduct = [...men, ...women, ...kids, ...accessories, ...cosmetics];
 
   const [items, setItems] = useState([]);
-  const cartCount = items.length;
+  // const cartCount = items.length;
 
   useEffect(() => {
     const savedCart = localStorage.getItem("My Cart");
@@ -66,7 +65,7 @@ export default function CartItem() {
   return (
     <>
       <div className="cartItemSec">
-        {items.length == 0 ? (
+        {items.length === 0 ? (
           <div className="messageBox">
             <p>Your cart is currently empty.</p>
           </div>
@@ -74,7 +73,7 @@ export default function CartItem() {
           items?.map((item) => (
             <div key={item.id} className="cartProduct">
               <div className="cartImg">
-                <img src={require(`../../imgs/${item.img}`)} />
+                <img src={require(`../../imgs/${item.img}`)} alt={item.name} />
               </div>
               <div className="cartProductName">
                 <p>{item.name}</p>

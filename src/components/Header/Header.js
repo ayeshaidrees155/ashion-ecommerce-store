@@ -2,16 +2,10 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { IoBagOutline } from "react-icons/io5";
 import { IoMdHeartEmpty, IoMdSearch } from "react-icons/io";
-
-import { CiHeart, CiSearch } from "react-icons/ci";
-
 import { Link, useNavigate } from "react-router-dom";
-
 import "./Header.css";
-import { Route, Router } from "react-router-dom";
 
 export default function Header() {
   const [isLogIn, setIsLogIn] = useState(false);

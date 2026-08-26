@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../WomenProduct/WomenProduct.css";
-import data from "../../../data/Product.json";
+import productData from "../../../data/Product.json";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Kids() {
-  const { kids } = data;
+  const kids = productData.kids || [];
   const goToCartPage = (item) => {
     const prevCart = JSON.parse(localStorage.getItem("My Cart")) || [];
     const existingIndex = prevCart.findIndex(
@@ -60,7 +60,7 @@ export default function Kids() {
       {kids?.map((item) => (
         <div className="product" key={item.id}>
           <div className="productImg">
-            <img src={require(`../../../imgs/${item.img}`)} />
+            <img src={require(`../../../imgs/${item.img}`)} alt={item.name} />
             <div className="productOverlay">
               <Link to={`/productDetails/${item.id}`} className="blackColor">
                 <IoEyeSharp className="overlayIcon" />

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import Loader from "../../Loader/Loader";
 import "./Blog.css";
-import * as data from "../../../data/Product.json";
-
+import productData from "../../../data/Product.json";
 export default function BlogCard() {
-  const { blog } = data;
-  //loader
+  const blog = productData.blog || []; //loader
   const [imgLoading, setImgLoading] = useState({});
   const handleLoad = (id) => {
     setImgLoading((prev) => ({ ...prev, [id]: true }));
@@ -26,6 +24,7 @@ export default function BlogCard() {
               )}
               <img
                 src={require(`../../../imgs/${item.img}`)}
+                alt={item.name}
                 onLoad={() => handleLoad(item.id)}
                 style={{
                   display: imgLoading[item.id] ? "block" : "none",

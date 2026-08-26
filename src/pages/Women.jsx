@@ -5,14 +5,13 @@ import "./pages.css";
 import Categories from "../components/Categories/Categories"
 import WomenProduct from '../components/Products/WomenProduct/WomenProduct';
 import Path from '../components/Path/Path';
-import data from "../data/Product.json";
+import productData from "../data/Product.json";
 import SortBy from '../components/LiveMap/SortBy/SortBy';
 
 
 
 export default function Women() {
-    const { women } = data;
-    const [type, setType] = useState([]);
+    const women = productData.women || []; const [type, setType] = useState([]);
     const [subType, setSubType] = useState([]);
     const [size, setSize] = useState([]);
     const [color, setColor] = useState([]);

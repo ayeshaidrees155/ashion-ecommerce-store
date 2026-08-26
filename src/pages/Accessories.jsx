@@ -7,7 +7,7 @@ import AccessoriesProduct from '../components/Products/AccessoriesProduct/Access
 import Path from '../components/Path/Path';
 
 
-export default function Cosmetics() {
+export default function Accessories() {
 
     return (
         <Wrapper>

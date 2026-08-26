@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "../WomenProduct/WomenProduct.css";
-import data from "../../../data/Product.json";
+import productData from "../../../data/Product.json";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import Loader from "../../Loader/Loader";
 import { Link } from "react-router-dom";
 
 export default function CosmeticsProduct() {
-  const { accessories } = data;
-
+  const accessories = productData.accessories || [];
   const goToCartPage = (item) => {
     const prevCart = JSON.parse(localStorage.getItem("My Cart")) || [];
     const existingIndex = prevCart.findIndex(
@@ -72,6 +71,7 @@ export default function CosmeticsProduct() {
             )}
             <img
               src={require(`../../../imgs/${item.img}`)}
+              alt={item.name}
               onLoad={() => handleLoad(item.id)}
               style={{
                 display: imgLoading[item.id] ? "block" : "none",

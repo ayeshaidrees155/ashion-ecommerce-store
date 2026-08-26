@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Categories.css";
 import { Accordion } from "react-bootstrap";
-import { FaWeight } from "react-icons/fa";
 
 export default function Categories({
   type,

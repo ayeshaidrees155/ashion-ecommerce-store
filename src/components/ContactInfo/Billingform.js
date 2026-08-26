@@ -11,8 +11,10 @@ export default function BillingForm({ onValidationChange }) {
   };
 
   useEffect(() => {
-    handleChange();
-  }, []);
+    if (formRef.current) {
+      onValidationChange(formRef.current.checkValidity());
+    }
+  }, [onValidationChange]);
   return (
     <div className="billing-container">
       <h5 className="billing-title">BILLING DETAILS</h5>
@@ -54,9 +56,7 @@ export default function BillingForm({ onValidationChange }) {
             className="margin-bottom"
             required
           />
-          <label>
-            Apartment, suite, unit (optional) <strong>*</strong>
-          </label>
+          <label>Apartment, suite, unit (optional)</label>
           <input
             style={{ border: "1px solid black" }}
             type="text"

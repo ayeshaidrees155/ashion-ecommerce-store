@@ -3,7 +3,6 @@ import "./Form.css";
 import { MdLocationPin } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaHeadphones } from "react-icons/fa6";
-import Button from "../Button/Button";
 
 export default function Form() {
   return (

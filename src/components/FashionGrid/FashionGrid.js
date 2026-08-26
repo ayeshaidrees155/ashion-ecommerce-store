@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FashionGrid.css";
 import img1 from "../../imgs/pexels-addy-bronzzz-264850064-16848901.jpg";
 import img2 from "../../imgs/pexels-erkocphoto-36682777.jpg";
@@ -6,7 +6,6 @@ import img3 from "../../imgs/pexels-duy-pham-234114420-30041402.jpg";
 import img4 from "../../imgs/pexels-shvetsa-5069484.jpg";
 import img5 from "../../imgs/pexels-yuliana-kungurova-333089015-13915355.jpg";
 import { Link } from "react-router-dom";
-import Loader from "../Loader/Loader";
 
 export default function FashionGrid() {
   const categories = [

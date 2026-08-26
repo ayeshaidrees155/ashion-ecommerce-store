@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import data from "../../../data/Product.json";
 import "../WomenProduct/WomenProduct.css";
 import { Link } from "react-router-dom";
 import { IoEyeSharp } from "react-icons/io5";
@@ -97,6 +96,7 @@ export default function MenProduct({ filterItems }) {
               )}
               <img
                 src={require(`../../../imgs/${item.img}`)}
+                alt={item.name}
                 onLoad={() => handleLoad(item.id)}
                 style={{
                   display: imgLoading[item.id] ? "block" : "none",

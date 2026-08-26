@@ -1,20 +1,17 @@
 import React, { useState } from 'react'
 import "./pages.css";
-import { useLocation, Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Counter from '../components/Counter/Counter';
-import { FaWeight } from 'react-icons/fa';
 import { IoMdHeartEmpty } from "react-icons/io";
-import data from "../data/Product.json";
-
+import productData from "../data/Product.json";
 import Button from '../components/Button/Button';
 import Wrapper from './Wrapper';
 import ProductSlider from '../components/Products/Productslider/ProductSlider';
 import Path from '../components/Path/Path';
-import { MdHeight } from 'react-icons/md';
-import { PiX } from 'react-icons/pi';
+
 
 export default function ProductDetails() {
-    const { men, women, kids, cosmetics, accessories } = data;
+    const { men = [], women = [], kids = [], cosmetics = [], accessories = [] } = productData;
     const allproduct = [
         ...women,
         ...men,

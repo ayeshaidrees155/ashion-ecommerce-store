@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Wrapper from './Wrapper'
 import FashionGrid from "../components/FashionGrid/FashionGrid"
 import Slider from '../components/Slider/Slider'
@@ -7,7 +7,7 @@ import Loader from '../components/Loader/Loader'
 
 
 export default function Home() {
-    const [loading, setLoading] = useState(false)
+    const loading = false;
 
     return (
         <Wrapper>

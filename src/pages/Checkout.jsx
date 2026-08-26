@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CartSummary from '../components/Cart/CartSummary'
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BillingForm from '../components/ContactInfo/Billingform';
 import Path from '../components/Path/Path';
 
