@@ -1,17 +1,20 @@
 .parentConatiner {
     display: flex;
     width: 100%;
-    padding: 40px 5%;
+    padding: 20px 10px;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .billingForm {
     flex: 1 1 60%;
     max-width: 700px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .bill {
@@ -20,11 +23,13 @@
     position: sticky;
     top: 20px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .billing-container {
     width: 100%;
     box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .custom-form {
@@ -59,6 +64,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 .order-summary-container {
@@ -85,7 +91,7 @@
 
 @media (max-width: 600px) {
     .parentConatiner {
-        padding: 20px 15px;
+        padding: 15px 5px;
     }
 
     .input-group-row {
