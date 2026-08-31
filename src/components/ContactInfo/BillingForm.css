@@ -1,5 +1,3 @@
-/* --- CHECKOUT & BILLING RESPONSIVE STYLES --- */
-
 .parentConatiner {
     display: flex;
     width: 100%;
@@ -34,14 +32,13 @@
     box-sizing: border-box;
 }
 
-
 .input-field input,
 .input-field select {
     width: 100%;
     height: 45px;
     border: 1px solid #e73939;
     padding: 0 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
     outline: none;
     box-sizing: border-box;
@@ -71,7 +68,6 @@
     box-sizing: border-box;
     width: 100%;
 }
-
 
 @media (max-width: 991px) {
 
