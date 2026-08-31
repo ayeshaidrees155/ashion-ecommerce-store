@@ -2,8 +2,8 @@
     display: flex;
     width: 100%;
     height: auto;
-
     padding: 30px 10px;
+    box-sizing: border-box;
 }
 
 @media (max-width:800px) {
@@ -26,18 +26,29 @@
 
 .detailsContainer {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.detailsSliderWrapper {
+    flex: 1 1 45%;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .imgSec {
     flex: 1 1 30%;
     height: 500px;
     padding: 20px;
-
+    box-sizing: border-box;
 }
 
 .imgSec img {
@@ -48,13 +59,16 @@
 
 .detailsSec {
     flex: 1 1 50%;
-    height: 500px;
-    padding: 30px 10px;
-    margin: 20px;
+    min-width: 300px;
+    height: auto;
+    padding: 20px 0px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .detailName {
     font-size: var(--fs-primary);
+    word-break: break-word;
 }
 
 .detailPrice {
@@ -66,14 +80,30 @@
 .detailDescription {
     color: var(--fc-secondary);
     font-weight: lighter;
+    word-break: break-word;
 }
 
 .selSection {
     display: flex;
-    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0px 15px;
+    gap: 15px;
+    padding: 0;
     margin: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.counterWishlistRow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-to-cart-btn {
+    flex: 1;
+    min-width: 180px;
 }
 
 .wishlistIconDiv {
@@ -86,11 +116,14 @@
     justify-content: center;
     cursor: pointer;
     background: #ffffff;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .wishlistIcon {
     font-size: 22px;
     color: #333333;
+    margin: 0;
 }
 
 .wishlistIconDiv:hover {
@@ -99,33 +132,31 @@
 }
 
 .contactInfo {
-
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .locationDiv {
     flex: 1 1 45%;
-
     padding: 3px 30px;
+    box-sizing: border-box;
 }
 
 .mapDiv {
     flex: 1 1 45%;
-
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .circleDiv {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    margin: 2px 57px;
-    ;
-
+    margin: 0;
 }
 
 .circle {
@@ -133,42 +164,63 @@
     height: 15px;
     background: yellow;
     border-radius: 10px;
-    margin-left: 5px;
-}
-
-.wishlistIconDiv {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #e6e3e3;
-    border-radius: 30px;
-    text-align: center;
-
-    color: grey;
-}
-
-.wishlistIcon {
-    margin: 16px 11px;
-    font-size: 19px;
+    margin-right: 5px;
 }
 
 .red {
     color: red;
 }
 
-
 .pathAdjustment {
     padding-top: 100px;
 }
 
+.detailMetaRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px 0;
+    gap: 10px;
+}
 
-@media (max-width:750px) {
+.detailMetaTitle {
+    font-weight: bold;
+    margin: 0;
+    min-width: 110px;
+}
+
+.detailMetaCheckbox {
+    margin: 0;
+}
+
+.detailMetaText {
+    color: var(--fc-secondary);
+    margin: 0;
+}
+
+.detailMetaValue {
+    color: var(--fc-secondary);
+    margin: 0;
+    word-break: break-word;
+}
+
+@media (max-width: 991px) {
+
+    .detailsSliderWrapper,
+    .detailsSec {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
     .detailsContainer {
         flex-direction: column;
+        padding: 10px;
     }
 
     .contactInfo {
         flex-direction: column;
-
     }
 
     .locationDiv {
@@ -177,5 +229,36 @@
 
     .mapDiv {
         width: 100%;
+    }
+
+    .selSection {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .counterWishlistRow {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        width: auto !important;
+        gap: 10px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .wishlistIconDiv {
+        margin-left: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .add-to-cart-btn {
+        flex: 1 !important;
+        width: auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
     }
 }

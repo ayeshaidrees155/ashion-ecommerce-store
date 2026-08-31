@@ -9,7 +9,6 @@ import Wrapper from './Wrapper';
 import ProductSlider from '../components/Products/Productslider/ProductSlider';
 import Path from '../components/Path/Path';
 
-
 export default function ProductDetails() {
     const { men = [], women = [], kids = [], cosmetics = [], accessories = [] } = productData;
     const allproduct = [
@@ -23,39 +22,56 @@ export default function ProductDetails() {
     const { id } = useParams();
     const item = allproduct.find((item) => item.id === Number(id));
 
-
-    console.log(item);
-
-
     const goToCartPage = (item) => {
         const prevCart = JSON.parse(localStorage.getItem("My Cart")) || [];
+        const existingIndex = prevCart.findIndex(
+            (cartItem) => cartItem.id === item.id,
+        );
 
-        const cartData = { ...item, qty: quantity };
-        const newCart = [...prevCart, cartData];
+        let newCart;
+        if (existingIndex !== -1) {
+            newCart = prevCart.map((cartItem, index) => {
+                if (index === existingIndex) {
+                    return { ...cartItem, qty: cartItem.qty + 1 };
+                }
+                return cartItem;
+            });
+        } else {
+            const cartData = { ...item, qty: 1 };
+            newCart = [...prevCart, cartData];
+        }
+
         localStorage.setItem("My Cart", JSON.stringify(newCart));
         window.dispatchEvent(new Event("storage"));
     };
-
 
     const [quantity, setQuantity] = useState(1);
 
     const goToWishlistPage = (item) => {
         const prevWishlist = JSON.parse(localStorage.getItem("My Wishlist")) || [];
-        const currentDate = new Date().toLocaleDateString("en-PK", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-        });
-        const wishlistData = {
-            ...item,
-            dateAdded: currentDate,
-        };
-        const newWishlist = [...prevWishlist, wishlistData];
-        localStorage.setItem("My Wishlist", JSON.stringify(newWishlist));
-        window.dispatchEvent(new Event("storage"));
 
+        const isAlreadyExist = prevWishlist.some(
+            (wishItem) => wishItem.id === item.id,
+        );
+
+        if (!isAlreadyExist) {
+            const currentDate = new Date().toLocaleDateString("en-PK", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+            });
+            const wishlistData = {
+                ...item,
+                dateAdded: currentDate,
+            };
+
+            const newWishlist = [...prevWishlist, wishlistData];
+            localStorage.setItem("My Wishlist", JSON.stringify(newWishlist));
+            window.dispatchEvent(new Event("storage"));
+        } else {
+            return;
+        }
     };
-
 
     if (!item) return <Wrapper><div>Product not found</div></Wrapper>;
 
@@ -65,30 +81,37 @@ export default function ProductDetails() {
         <Wrapper>
             <Path style={{ paddingTop: "120px" }} />
             <div className='detailsContainer'>
-
-                <ProductSlider sliderImgs={currentSliderImgs} />
-
+                <div className='detailsSliderWrapper'>
+                    <ProductSlider sliderImgs={currentSliderImgs} />
+                </div>
 
                 <div className='detailsSec'>
-
                     <h1 style={{ textTransform: 'uppercase' }} className='detailName'>{item.name}</h1>
                     <p>{item.icon}</p>
                     <h3 className='detailPrice'>Rs.{item.price}</h3>
                     <p className='detailDescription'>{item.description}</p>
 
-                    {/* selection section */}
                     <div className='selSection'>
-                        <Counter
-                            title='Quantity:'
-                            quantity={quantity}
-                            setQuantity={setQuantity}
-                        />
+                        <div className='counterWishlistRow'>
+                            <Counter
+                                title='Quantity:'
+                                quantity={quantity}
+                                setQuantity={setQuantity}
+                            />
+
+                            <div className='wishlistIconDiv'>
+                                <IoMdHeartEmpty
+                                    className='wishlistIcon'
+                                    onClick={() => goToWishlistPage(item)}
+                                />
+                            </div>
+                        </div>
 
                         <Button
                             style={{
                                 background: "var(--bg-tertiary)",
                                 padding: "0 25px",
-                                margin: "0 5px",
+                                margin: "0",
                                 height: "48px",
                                 borderRadius: "28px",
                                 border: "none",
@@ -105,54 +128,30 @@ export default function ProductDetails() {
                             label='ADD TO CART'
                             onClick={() => goToCartPage(item)}
                         />
-
-                        <div className='wishlistIconDiv'>
-                            <IoMdHeartEmpty
-                                className='wishlistIcon'
-                                onClick={() => goToWishlistPage(item)}
-                            />
-                        </div>
                     </div>
 
-                    <hr></hr>
-                    <span>
-                        <p style={{
-                            fontWeight: 'bold',
-                            margin: '5px 19px 4px 5px'
-                        }}>Availability:</p>
-                        <input type='checkbox' style={{ margin: '12px 0px 10px 21px' }} />
-
-                        <label style={{ color: 'var(--fc-secondary)', margin: '5px 2px' }}>In Stock</label>
-                    </span>
-                    <span>
-                        <p style={{
-                            fontWeight: 'bold',
-                            margin: '5px 19px 4px 5px'
-                        }}>Colors:</p>
+                    <hr />
+                    <div className='detailMetaRow'>
+                        <p className='detailMetaTitle'>Availability:</p>
+                        <input type='checkbox' className='detailMetaCheckbox' defaultChecked disabled />
+                        <label className='detailMetaText'>In Stock</label>
+                    </div>
+                    <div className='detailMetaRow'>
+                        <p className='detailMetaTitle'>Colors:</p>
                         <div className='circleDiv'>
                             <div className='circle' style={{ background: 'red' }}></div>
                             <div className='circle' style={{ background: 'black' }}></div>
                             <div className='circle' style={{ background: 'brown' }}></div>
                         </div>
-
-                    </span>
-                    <span>
-                        <p style={{
-                            fontWeight: 'bold',
-                            margin: '5px 19px 4px 5px'
-                        }}>Available Size:</p>
-                        <p style={{ color: 'var(--fc-secondary)', margin: '2px' }}>XS S M L</p>
-
-                    </span>
-                    <span >
-                        <p style={{
-                            fontWeight: 'bold',
-                            margin: '5px 19px 4px 5px'
-                        }} >Promotion:</p>
-                        <p style={{ color: 'var(--fc-secondary)', margin: '5px 25px' }}>Free Shipping</p>
-
-                    </span>
-
+                    </div>
+                    <div className='detailMetaRow'>
+                        <p className='detailMetaTitle'>Available Size:</p>
+                        <p className='detailMetaValue'>XS S M L</p>
+                    </div>
+                    <div className='detailMetaRow'>
+                        <p className='detailMetaTitle'>Promotion:</p>
+                        <p className='detailMetaValue'>Free Shipping</p>
+                    </div>
                 </div>
             </div>
         </Wrapper>
