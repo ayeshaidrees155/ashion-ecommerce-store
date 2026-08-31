@@ -1,22 +1,11 @@
 import React, { useEffect, useState } from "react";
-// import productData from "../../data/Product.json";
 import Button from "../Button/Button";
 import "./Cart.css";
 import Counter from "../Counter/Counter";
 import { Link } from "react-router-dom";
 
 export default function CartItem() {
-  // const {
-  //   men = [],
-  //   women = [],
-  //   kids = [],
-  //   accessories = [],
-  //   cosmetics = [],
-  // } = productData;
-  // const allProduct = [...men, ...women, ...kids, ...accessories, ...cosmetics];
-
   const [items, setItems] = useState([]);
-  // const cartCount = items.length;
 
   useEffect(() => {
     const savedCart = localStorage.getItem("My Cart");

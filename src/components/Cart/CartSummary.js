@@ -24,13 +24,13 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
-
       onClose: () => {
         localStorage.removeItem("My Cart");
         navigate(-2);
       },
     });
   };
+
   return (
     <div className="order-summary-container">
       <ToastContainer />
@@ -77,6 +77,7 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
             <span className="text-danger fw-bold fs-5">Rs. {total}</span>
           </div>
         </div>
+
         <div className="payment-method-sec">
           <p className="payment-title">
             Payment Method <strong className="text-danger">*</strong>
@@ -113,13 +114,13 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
               className="payment-label terms"
               style={{
                 display: "flex",
-                alignItems: "center",
-                gap: "6px",
-                whiteSpace: "nowrap",
+                alignItems: "flex-start",
+                gap: "8px",
+                whiteSpace: "normal",
                 cursor: "pointer",
               }}
             >
-              <input type="checkbox" required />
+              <input type="checkbox" required style={{ marginTop: "3px" }} />
               <span className="custom-checkbox"></span>
               <span>
                 I have read and agree to the{" "}
@@ -131,6 +132,7 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
             </label>
           </div>
         </div>
+
         <button
           onClick={handlePlaceOrder}
           className="place-order-btn"
