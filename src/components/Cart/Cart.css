@@ -63,6 +63,7 @@
     border-radius: 2px;
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
 }
 
 .order-title {
@@ -198,41 +199,51 @@
     background: #ca1515;
 }
 
-.custom-checkbox {
+.payment-label.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    color: #111;
+    position: relative;
+    user-select: none;
+}
+
+.payment-label.terms input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.payment-label.terms .custom-checkbox {
     height: 16px;
     width: 16px;
     min-width: 16px;
     border: 1px solid #d7d7d7;
-    margin-right: 12px;
     display: inline-block;
+    margin-top: 3px;
+    flex-shrink: 0;
+    margin-right: 0;
 }
 
-.payment-label input:checked~.custom-checkbox {
+.payment-label.terms input[type="checkbox"]:checked~.custom-checkbox {
     background-color: #ca1515;
     border-color: #ca1515;
 }
 
-.payment-label.terms {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    white-space: normal;
-    word-break: break-word;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.payment-label.terms span {
+.payment-label.terms>span:not(.custom-checkbox) {
     flex: 1;
     min-width: 0;
-    word-break: break-word;
     white-space: normal;
-}
-
-.payment-label.terms input[type="checkbox"] {
-    position: static;
-    opacity: 0;
-    cursor: pointer;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .terms a {

@@ -110,17 +110,8 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
           </div>
 
           <div className="terms-sec mt-3">
-            <label
-              className="payment-label terms"
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "8px",
-                whiteSpace: "normal",
-                cursor: "pointer",
-              }}
-            >
-              <input type="checkbox" required style={{ marginTop: "3px" }} />
+            <label className="payment-label terms">
+              <input type="checkbox" required />
               <span className="custom-checkbox"></span>
               <span>
                 I have read and agree to the{" "}
