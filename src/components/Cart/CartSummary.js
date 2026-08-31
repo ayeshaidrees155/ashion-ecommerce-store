@@ -124,9 +124,7 @@ export default function CartSummary({ items, isFormValid, orderTotal }) {
               <span className="custom-checkbox"></span>
               <span>
                 I have read and agree to the{" "}
-                <a href="#terms" className="text-primary">
-                  terms and conditions
-                </a>{" "}
+                <span className="text-primary">terms and conditions</span>{" "}
                 <span className="text-danger">*</span>
               </span>
             </label>
